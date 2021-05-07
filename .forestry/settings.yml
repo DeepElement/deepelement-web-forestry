@@ -4,6 +4,8 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: Test
 - type: directory
   path: docs
   label: Docs
@@ -11,11 +13,6 @@ sections:
   match: "*.md"
   templates:
   - page
-- type: directory
-  path: blog
-  label: Blog
-  create: documents
-  match: "*.md"
 - type: document
   path: sidebars.json
   label: Sidebar
